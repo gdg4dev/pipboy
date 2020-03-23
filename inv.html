@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pipboy fallout</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tether.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="lay1">
+    <!-- main area start -->
+
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav nav-fill mr-auto ml-auto">
+                <li class="navbar-item" id="s">
+                    <a href="index.html" class="nav-link">STAT</a>
+                </li>
+                <li class="nav-item active" id="i">
+                    <a href="inv.html" class="nav-link">INV</a>
+                </li>
+                <li class="nav-item" id="d">
+                    <a href="#d" class="nav-link">DATA</a>
+                </li>
+                <li class="nav-item" id="m">
+                    <a href="#m" class="nav-link">MAP</a>
+                </li>
+                <li class="nav-item" id="r">
+                    <a href="#r" class="nav-link">RADIO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item active">
+            <a href="#status" class="nav-link" data-toggle="tab" role="tab">WEAPONS</a>
+        </li>
+        <li class="nav-item">
+            <a href="#special" class="nav-link" data-toggle="tab">ARMOR</a>
+        </li>
+        <li class="nav-item">
+            <a href="#perks" class="nav-link" data-toggle="tab">AID</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active full" id="status" role="tabpanel">
+            <ul class="item-list" style="width: 40% !important;list-style: none; font-size: 20px; word-wrap:normal">
+                <li class="listW active" id="44_Pistol"><a class="aW" href="#">.44 Pis tol</a></li>
+                <li class="listW" id="10mm_Pistol"><a class="aW" href="#">10mm Pistol</a></li>
+                <li class="listW" id="Assault_Rifle"><a class="aW" href="#">Assault Rifle</a></li>
+            </ul>
+            <div class="info_weapon">
+                <table style="width: 20%;
+                    right: 0;
+                    /* bottom: 0; */
+                    position: absolute;
+                    background: rgba(16, 255, 0, .15);
+                    margin-right: 50px;
+                    margin-top: 3cm;">
+                    <tr>
+                        <td>Damage</td>
+                        <td id="damage">48</td>
+                    </tr>
+                    <tr>
+                        <td>Ammo</td>
+                        <td id="ammo">500</td>
+                    </tr>
+                    <tr>
+                        <td>Fire Rate</td>
+                        <td id="firerate">40</td>
+                    </tr>
+                    <tr>
+                        <td>Rnage</td>
+                        <td id="range">48</td>
+                    </tr>
+                    <tr>
+                        <td>Accuracy</td>
+                        <td id="accu">48</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td id="weg">48</td>
+                    </tr>
+                    <tr>
+                        <td>Value</td>
+                        <td id="val">48</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tab-pane" id="special" role="tabpanel">
+            SPECIAL
+        </div>
+        <div class="tab-pane" id="perks" role="tabpanel">
+            PERKS
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 p-0">
+                <nav style="
+                    font-size: 22px;
+                    position: fixed !important;
+                    left: -1.5%;
+                    bottom: 0 !important;
+                    transform: translateX(.2cm);
+                    
+                    border-bottom: none;" class="navbar navbar-fixed-bottom navbar-expand-lg navbar-light pip-footer ">
+                    <div class="col-3 text-left foot-content ">
+                        HP 90/90
+                    </div>
+                    <div class="col-6 progress-bar-lv-1 p-0 foot-content">
+                        <span class="lvl-txt">LEVEL 1 &emsp;&emsp;</span>
+                        <progress value="60" max="100"></progress>
+                    </div>
+                    <div class="col-3 text-right foot-content ">
+                        AP 50/50
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- main are end -->
+</div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
